@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mathieu Grisard Pelaez">
+    <title>Möb3l - Muebles personalizados de impresión 3D</title>
+    <link rel="stylesheet" href="./CSS/responsivo.css">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <script src="./JavaScript/slider.js" defer></script>
+    <script src="./JavaScript/main.js" defer></script>
+    <!-- Otros elementos head -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header con logo completo para página principal -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="./imagenes_html/logo_marca.png" alt="Möb3l Logo" class="logo-main">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="./index.html" class="active">Inicio</a></li>
+                    <li><a href="decoracion.html">Decoración</a></li>
+                    <li><a href="funcionales.html">Funcionales</a></li>
+                    <li><a href="exposiciones.html">Exposiciones</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>CREATE YOUR IMAGINATION</h1>
+            <p>Diseño de muebles personalizados mediante impresión 3D</p>
+            <a href="#featured" class="btn primary-btn">Descubrir productos</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured" class="featured-products">
+        <div class="container">
+            <h2>Productos Destacados</h2>
+            <div class="product-slider">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./imagenes_html/productos/mesa_index.jpg" alt="Mesa de centro personalizada">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mesa de Centro Orgánica</h3>
+                        <p>Mesa de diseño orgánico inspirada en formas naturales, personalizable en dimensiones.</p>
+                        <a href="./configurador.html?product=mesa-centro" class="btn secondary-btn">Configurar</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/img/productos/producto2.jpg" alt="Lámpara geométrica">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lámpara Geométrica</h3>
+                        <p>Lámpara de pie con diseño geométrico, personalizable en patrones, color y dimensiones.</p>
+                        <a href="configurador.html?product=lampara" class="btn secondary-btn">Configurar</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/img/productos/producto3.jpg" alt="Estantería modular">
+                    </div>
+                    <div class="product-info">
+                        <h3>Estantería Modular</h3>
+                        <p>Sistema de estantería adaptable a cualquier espacio con módulos personalizables.</p>
+                        <a href="configurador.html?product=estanteria" class="btn secondary-btn">Configurar</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/img/productos/producto4.jpg" alt="Silla ergonómica">
+                    </div>
+                    <div class="product-info">
+                        <h3>Silla Ergonómica</h3>
+                        <p>Silla adaptada a tu anatomía gracias a la personalización mediante impresión 3D.</p>
+                        <a href="configurador.html?product=silla" class="btn secondary-btn">Configurar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2>Nuestras Categorías</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="assets/img/productos/categoria-decoracion.jpg" alt="Decoración">
+                    <div class="category-overlay">
+                        <h3>Decoración</h3>
+                        <p>Piezas únicas para embellecer cualquier espacio</p>
+                        <a href="decoracion.html" class="btn primary-btn">Explorar</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="assets/img/productos/categoria-funcionales.jpg" alt="Funcionales">
+                    <div class="category-overlay">
+                        <h3>Funcionales</h3>
+                        <p>Muebles prácticos adaptados a tus necesidades</p>
+                        <a href="funcionales.html" class="btn primary-btn">Explorar</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="assets/img/productos/categoria-exposiciones.jpg" alt="Exposiciones">
+                    <div class="category-overlay">
+                        <h3>Exposiciones</h3>
+                        <p>Colaboraciones exclusivas con artistas destacados</p>
+                        <a href="exposiciones.html" class="btn primary-btn">Explorar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Preview -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Möb3l: Redefiniendo el Diseño de Interiores</h2>
+                    <p>Somos líderes en el diseño de muebles personalizados mediante impresión 3D, comprometidos con la innovación, la sostenibilidad y la calidad.</p>
+                    <p>Cada pieza que creamos es única, diseñada a medida para satisfacer las necesidades específicas de cada cliente, convirtiendo su imaginación en realidad.</p>
+                    <a href="nosotros.html" class="btn secondary-btn">Conoce más sobre nosotros</a>
+                </div>
+                <div class="about-image">
+                    <img src="./imagenes_html/imagen_diseño.png" alt="Nuestro proceso de diseño">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="./imagenes_html/logo_marca_footer.png" alt="Möb3l Logo" class="logo-footer">
+                    <p>CREATE YOUR IMAGINATION</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Navegación</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="decoracion.html">Decoración</a></li>
+                            <li><a href="funcionales.html">Funcionales</a></li>
+                            <li><a href="exposiciones.html">Exposiciones</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <address>
+                        <p>Email: info@moebel.com</p>
+                        <p>Teléfono: +34 912 345 678</p>
+                        <p>Dirección: Calle Diseño, 3D, 28001 Madrid</p>
+                    </address>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Síguenos</h4> 
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Möb3l. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

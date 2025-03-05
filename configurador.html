@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurador de Productos - Möb3l</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="stylesheet" href="./CSS/estilos_configurador.css">
+    <link rel="stylesheet" href="./CSS/responsivo.css">
+    <script src="./JavaScript/main.js" defer></script>
+    <script src="./JavaScript/configurador.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header con logo simplificado -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="./imagenes_html/logo_marca.png" alt="Möb3l Logo" class="logo-main">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="decoracion.html">Decoración</a></li>
+                    <li><a href="funcionales.html">Funcionales</a></li>
+                    <li><a href="exposiciones.html">Exposiciones</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+     <!-- Page Header -->
+     <section class="page-header" style="background-image: url('./imagenes_html/productos/configurador/background_header_imagen.jpg');">
+        <div class="page-header-content">
+            <h1 id="product-title">Configurador de Dimensiones</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Inicio</a> &gt; <span>Configurador</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simplified Configurator Section -->
+    <section class="configurator-container">
+        <div class="container">
+            <div class="configurator-grid">
+                <div class="preview-container">
+                    <div class="product-preview">
+                        <img id="product-preview" src="./imagenes_html/productos/configurador/default-preview.jpg" alt="Vista previa del producto">
+                    </div>
+                    <div class="preview-controls">
+                        <button id="rotate-left" aria-label="Rotar a la izquierda" title="Rotar a la izquierda">
+                            <i class="fas fa-rotate-left"></i>
+                        </button>
+                        <button id="rotate-right" aria-label="Rotar a la derecha" title="Rotar a la derecha">
+                            <i class="fas fa-rotate-right"></i>
+                        </button>
+                        <button id="zoom-in" aria-label="Ampliar" title="Ampliar">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                        <button id="zoom-out" aria-label="Reducir" title="Reducir">
+                            <i class="fas fa-search-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="options-panel">
+                    <h3>Personaliza las dimensiones</h3>
+                    
+                    <div class="config-group">
+                        <h4>Dimensiones (cm)</h4>
+                        <div class="dimension-controls">
+                            <div class="option-item">
+                                <label for="width" class="option-label">Ancho</label>
+                                <input type="number" id="width" class="option-input" min="40" max="200" value="80">
+                            </div>
+                            <div class="option-item">
+                                <label for="height" class="option-label">Alto</label>
+                                <input type="number" id="height" class="option-input" min="20" max="180" value="40">
+                            </div>
+                            <div class="option-item">
+                                <label for="depth" class="option-label">Profundidad</label>
+                                <input type="number" id="depth" class="option-input" min="20" max="150" value="40">
+                            </div>
+                            <div class="option-item">
+                                <label for="quantity" class="option-label">Cantidad</label>
+                                <input type="number" id="quantity" class="option-input" min="1" max="10" value="1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-container">
+                        <div class="price-title">Precio total:</div>
+                        <div class="price-value" id="price-value">450 €</div>
+                    </div>
+                    
+                    <div class="actions">
+                        <button id="add-to-cart" class="btn primary-btn">Añadir al carrito</button>
+                        <button id="save-config" class="btn secondary-btn">Guardar configuración</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="./imagenes_html/logo_marca_footer.png" alt="Möb3l Logo" class="logo-footer">
+                    <p>CREATE YOUR IMAGINATION</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Navegación</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="decoracion.html">Decoración</a></li>
+                            <li><a href="funcionales.html">Funcionales</a></li>
+                            <li><a href="exposiciones.html">Exposiciones</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <address>
+                        <p>Email: info@moebel.com</p>
+                        <p>Teléfono: +34 912 345 678</p>
+                        <p>Dirección: Calle Diseño, 3D, 28001 Madrid</p>
+                    </address>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Möb3l. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
