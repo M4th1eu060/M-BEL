@@ -1,0 +1,789 @@
+/* Estilos para secciones adicionales - Möb3l */
+
+/* Estilos adicionales para la sección de introducción*/
+.section-intro {
+    padding: 80px 0;
+    background-color: var(--light-text);
+    position: relative;
+    margin-top: 50px;
+}
+
+.section-intro h2 {
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.intro-text {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.intro-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.highlight-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-item i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.highlight-item span {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .intro-highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .highlight-item {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+}
+
+/* Estilos para la sección de diseños de clientes */
+.client-designs-section {
+    padding: 80px 0;
+    background-color: var(--light-text);
+}
+
+.client-designs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.design-item {
+    display: flex;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.design-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.design-image {
+    width: 40%;
+    overflow: hidden;
+}
+
+.design-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.design-item:hover .design-image img {
+    transform: scale(1.05);
+}
+
+.design-content {
+    width: 60%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.design-content h3 {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.client-location {
+    font-style: italic;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.design-content p {
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.design-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.design-specs span {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 8px 12px;
+    border-radius: var(--border-radius);
+    display: inline-flex;
+    align-items: center;
+}
+
+.design-specs i {
+    margin-right: 8px;
+    color: var(--accent-color);
+}
+
+@media (max-width: 992px) {
+    .design-item {
+        flex-direction: column;
+    }
+    
+    .design-image,
+    .design-content {
+        width: 100%;
+    }
+    
+    .design-image {
+        height: 250px;
+    }
+}
+
+/* Sección de materiales */
+.materials-section {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.material-item {
+    background-color: var(--light-text);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.material-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.material-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+}
+
+.material-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.material-item p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Proceso de diseño */
+.design-process {
+    padding: 80px 0;
+    background-color: var(--light-text);
+}
+
+.process-steps {
+    max-width: 800px;
+    margin: 40px auto 0;
+    position: relative;
+}
+
+.process-steps::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    width: 4px;
+    background-color: var(--primary-color);
+}
+
+.step {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.step:last-child {
+    margin-bottom: 0;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.step-content {
+    margin-left: 25px;
+    padding-top: 5px;
+}
+
+.step-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.step-content p {
+    color: #666;
+}
+
+/* Estilos para categorías (funcionales) */
+.categories-section {
+    padding: 80px 0;
+    background-color: var(--light-text);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.category-item {
+    display: flex;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.category-image {
+    width: 40%;
+    overflow: hidden;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-content {
+    width: 60%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category-content h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.category-content p {
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para material especial (funcionales) */
+.special-materials {
+    background-color: var(--light-text);
+}
+
+.special-materials .material-icon {
+    background-color: var(--accent-color);
+}
+
+/* Estilos para exposiciones */
+.current-exhibition {
+    padding: 80px 0;
+    background-color: var(--light-text);
+}
+
+.exhibition-feature {
+    display: flex;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    margin-top: 40px;
+}
+
+.exhibition-image {
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.exhibition-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.exhibition-details {
+    width: 50%;
+    padding: 40px;
+}
+
+.exhibition-details h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.artist-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.artist-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.artist-info h4 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.exhibition-description {
+    margin-bottom: 30px;
+    color: #333;
+    line-height: 1.7;
+}
+
+.exhibition-dates {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: var(--border-radius);
+}
+
+.exhibition-dates p {
+    margin-bottom: 10px;
+}
+
+.exhibition-gallery {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.exhibition-slider {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exhibition-piece {
+    width: 90%;
+    max-width: 800px;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.piece-image {
+    width: 40%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.piece-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.piece-info {
+    width: 60%;
+    padding: 30px;
+}
+
+.piece-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.piece-info p {
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.piece-details {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border-radius: var(--border-radius);
+}
+
+.piece-details p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.past-exhibitions {
+    padding: 80px 0;
+    background-color: var(--light-text);
+}
+
+.exhibitions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.past-exhibition-card {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.past-exhibition-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.past-exhibition-card .exhibition-image {
+    width: 100%;
+    height: 250px;
+}
+
+.past-exhibition-card .exhibition-content {
+    padding: 25px;
+}
+
+.past-exhibition-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.past-exhibition-card .artist {
+    font-weight: 500;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.past-exhibition-card .dates {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.past-exhibition-card .description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.artist-application {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.application-content {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.application-info {
+    flex: 2;
+}
+
+.application-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.application-info p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.application-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.application-info ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.application-info li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.application-info li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+.application-cta {
+    flex: 1;
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    color: var(--light-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.application-cta h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: var(--light-text);
+}
+
+.application-cta p {
+    margin-bottom: 30px;
+}
+
+.events-calendar {
+    padding: 80px 0;
+    background-color: var(--light-text);
+}
+
+.events-list {
+    margin-top: 40px;
+}
+
+.event-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.event-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.event-date {
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.event-date .day {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.event-date .month {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.event-details {
+    flex-grow: 1;
+}
+
+.event-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.event-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.event-meta i {
+    margin-right: 5px;
+    color: var(--accent-color);
+}
+
+.event-description {
+    line-height: 1.6;
+}
+
+.calendar-cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+    .exhibition-feature {
+        flex-direction: column;
+    }
+    
+    .exhibition-image, 
+    .exhibition-details {
+        width: 100%;
+    }
+    
+    .exhibition-piece {
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    .piece-image, 
+    .piece-info {
+        width: 100%;
+    }
+    
+    .application-content {
+        flex-direction: column;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-item {
+        flex-direction: column;
+    }
+    
+    .category-image,
+    .category-content {
+        width: 100%;
+    }
+    
+    .category-image {
+        height: 200px;
+    }
+    
+    .event-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .event-date {
+        margin-bottom: 15px;
+    }
+    
+    .exhibition-piece {
+        width: 95%;
+    }
+    
+    .piece-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .material-item {
+        padding: 20px;
+    }
+    
+    .step {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .step-content {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    
+    .process-steps::before {
+        display: none;
+    }
+    
+    .exhibitions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

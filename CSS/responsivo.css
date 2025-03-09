@@ -1,0 +1,127 @@
+/* Estilos Responsivos */
+
+/* Large Screens */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* CAMBIAR ESTAS LÍNEAS - en lugar de ocultar el menú principal, lo transformamos */
+    .main-nav {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--secondary-color);
+        padding: 30px 0;
+        transform: translateX(-100%);
+        transition: var(--transition);
+        z-index: 999;
+    }
+
+    /* Añadir esta regla para mostrar el menú cuando está activo */
+    .main-nav.active {
+        transform: translateX(0);
+    }
+
+    /* Ajustar la disposición de los elementos en el menú principal */
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .main-nav a {
+        font-size: 1.3rem;
+    }
+
+    /* Mostrar el botón hamburguesa */
+    .mobile-menu-toggle {
+        display: flex;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .product-slider {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-card {
+        min-width: 100%;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        height: 300px;
+    }
+
+    .page-header {
+        height: 300px;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        height: 80vh;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
