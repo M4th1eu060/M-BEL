@@ -48,6 +48,7 @@ img {
 /* Tipografia */
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
+    font-family: "Russo One", sans-serif;
     line-height: 1.2;
     font-weight: 600;
     color: var(--primary-color);
@@ -584,7 +585,7 @@ p {
 }
 
 .footer-logo img {
-    max-width: 150px;
+    max-width: 250px;
     margin-bottom: 20px;
 }
 
