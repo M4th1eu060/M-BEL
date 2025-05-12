@@ -75,6 +75,7 @@ h4 {
 /* p {
     margin-bottom: 20px;
 } */
+ 
 
 /* Botones */
 .btn {
@@ -1289,6 +1290,11 @@ h4 {
     margin-top: 50px;
 }
 
+.subtitblog{
+    text-align: center;
+    margin-top: 20px;
+}
+
 .blog1{
     font-size: large;
 }
@@ -1301,6 +1307,18 @@ h4 {
 .eleccionMuebles p{
     font-size: large;
     text-align: center;
+}
+
+.titulito{
+    text-align: left;
+    font-size: large;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 100px;
+}
+
+.imagenblog{
+    border-radius: 8px;
 }
 
 /* Responsive Styles */
