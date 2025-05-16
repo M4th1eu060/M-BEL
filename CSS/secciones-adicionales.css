@@ -700,6 +700,126 @@
     margin-top: 30px;
 }
 
+/*Estilos popup*/
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.popup-contenido {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.popup-contenido img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.popup-contenido h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.popup-contenido p {
+  font-size: 14px;
+  color: #555;
+  margin: 15px 0;
+}
+
+.popup-contenido input[type="email"] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.popup-contenido label {
+  display: block;
+  margin: 15px 0;
+  font-size: 13px;
+  color: #444;
+}
+
+.popup-contenido button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-contenido button:hover {
+  background-color: #005fa3;
+}
+
+#mensaje {
+  font-weight: bold;
+  margin-top: 10px;
+  min-height: 1.2em;
+}
+
+#mensaje.ok {
+  color: green;
+}
+
+#mensaje.error {
+  color: red;
+}
+
+#alerta-personalizada {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.alerta-caja {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  max-width: 400px;
+}
+
+.alerta-caja button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
 /* Responsivo */
 @media (max-width: 992px) {
     .exhibition-feature {
