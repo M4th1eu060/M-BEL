@@ -1,11 +1,13 @@
-    function mostrarPopupConRetraso() {
+//JavaScript Popup
+function mostrarPopupConRetraso() {
     // Comprobamos si ya se ha mostrado o no, si no se ha mostrado pues se muestra... sino pues no se muestra
     if (!localStorage.getItem("popupMostrado")) {
         setTimeout(() => {
-        document.getElementById("popup").style.display = "flex";
         localStorage.setItem("popupMostrado", "true"); // Marquem que ja s’ha mostrat
         }, 3000);
     }
+    
+        document.getElementById("popup").style.display = "flex";
     }
 
     // Cerrar el popup
@@ -41,7 +43,7 @@
         // Cerrar el popup tras 2 segundos si todo es correcto
         setTimeout(() => {
             cerrarPopup();
-        }, 1000);
+        }, 3000);
     }
 
 // Activar cuando se carga la página

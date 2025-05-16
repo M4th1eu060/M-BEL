@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <script src="./JavaScript/slider.js" defer></script>
     <script src="./JavaScript/main.js" defer></script>
+    <script src="./JavaScript/pop.js" defer></script>
     <!-- Otros elementos head -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -230,6 +231,35 @@
         </div>
     </section>
 
+      <div id="popup">
+  <div class="popup-contenido">
+    <!-- LOGO -->
+    <img src="./imagenes_html/Logo_nuevo.png" alt="Logo">
+
+    <!-- TÍTULO -->
+    <h2>¿Te unes a nuestra newsletter?</h2>
+
+    <!-- DESCRIPCIÓN -->
+    <p>Introduce tu correo y acepta nuestras cookies para continuar:</p>
+
+    <!-- CAMPO DE CORREO -->
+    <input type="email" id="correo" placeholder="Tu correo electrónico">
+
+    <!-- CHECK DE COOKIES -->
+    <label>
+      <input type="checkbox" id="cookies"> Acepto las cookies
+    </label>
+
+    <!-- MISSATGE DE VALIDACIÓ -->
+    <p id="mensaje" style="min-height: 1.5em;"></p>
+
+    <!-- BOTONS -->
+    <div>
+      <button onclick="aceptar()">Aceptar</button>
+      <button onclick="cerrarPopup()">Cerrar</button>
+    </div>
+  </div>
+    </div>
     <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
@@ -274,39 +304,5 @@
             </div>
         </div>
     </footer>
-    <div id="popup">
-  <div class="popup-contenido">
-    <!-- LOGO -->
-    <img src="https://via.placeholder.com/80" alt="Logo">
-
-    <!-- TÍTULO -->
-    <h2>¿Te unes a nuestra newsletter?</h2>
-
-    <!-- DESCRIPCIÓN -->
-    <p>Introduce tu correo y acepta nuestras cookies para continuar:</p>
-
-    <!-- CAMPO DE CORREO -->
-    <input type="email" id="correo" placeholder="Tu correo electrónico">
-
-    <!-- CHECK DE COOKIES -->
-    <label>
-      <input type="checkbox" id="cookies"> Acepto las cookies
-    </label>
-
-    <!-- MISSATGE DE VALIDACIÓ -->
-    <p id="mensaje" style="min-height: 1.5em;"></p>
-
-    <!-- BOTONS -->
-    <div>
-      <button onclick="aceptar()">Aceptar</button>
-      <button onclick="cerrarPopup()">Cerrar</button>
-    </div>
-  </div>
-</div>
-
-
-    <h1><a href="decoracion.html">Ir a otra sección</a></h1>
-
-<script src="./JavaScript/script.js"></script>
 </body>
 </html>
